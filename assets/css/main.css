@@ -75,7 +75,6 @@ div.main section.info h1 {
     @keyframes showTop {
     from {top:-200%;}
     to {top:0;}
-    }
 }
 
 div.main section.info h2 {
@@ -90,7 +89,6 @@ div.main section.info h2 {
     @keyframes showBottom {
     from {bottom:-200%;}
     to {bottom:0;}
-    }
 }
 
 div.main section.links {
