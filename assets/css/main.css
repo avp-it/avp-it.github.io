@@ -68,29 +68,29 @@ div.main section.info h1 {
     line-height: 50px;
     padding-top: 25px;
     padding-bottom: 5px;
-	position: relative;
-	animation: showTop 1.5s;
-	z-index: 1;
-}
-
-@keyframes showTop {
-from {top:-200%;}
-to {top:0;}
+    position: relative;
+    animation: showTop 1.5s;
+    z-index: 1;
+    }
+    @keyframes showTop {
+    from {top:-200%;}
+    to {top:0;}
+    }
 }
 
 div.main section.info h2 {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
-	padding-bottom: 45px;
-	position: relative;
-	animation: showBottom 1.5s;
-	z-index: 1;
-}
-
-@keyframes showBottom {
-from {bottom:-200%;}
-to {bottom:0;}
+    padding-bottom: 45px;
+    position: relative;
+    animation: showBottom 1.5s;
+    z-index: 1;
+    }
+    @keyframes showBottom {
+    from {bottom:-200%;}
+    to {bottom:0;}
+    }
 }
 
 div.main section.links {
