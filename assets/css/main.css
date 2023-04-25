@@ -14,6 +14,7 @@ body {
     background-size: cover;
 	opacity: 0.8;
     min-height: 100vh;
+	
 }
 footer {
     width: 100%;
@@ -42,6 +43,21 @@ div.main section.photo {
 div.main section.photo img {
     height: 135px;
     border-radius: 50%;
+	-webkit-animation-duration: 5s; 
+    animation-duration: 5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn;
+    } 
+    @-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+    } 
+    @keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+    }
 }
 div.main section.info {
     height: 115px;
@@ -52,12 +68,31 @@ div.main section.info h1 {
     line-height: 50px;
     padding-top: 25px;
     padding-bottom: 5px;
+	position: relative;
+	animation: showTop 1.5s;
+	z-index: 1;
 }
+
+@keyframes showTop {
+from {top:-200%;}
+to {top:0;}
+}
+
 div.main section.info h2 {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
+	padding-bottom: 45px;
+	position: relative;
+	animation: showBottom 1.5s;
+	z-index: 1;
 }
+
+@keyframes showBottom {
+from {bottom:-200%;}
+to {bottom:0;}
+}
+
 div.main section.links {
     height: 100px;
     padding-top: 37.5px;
