@@ -36,34 +36,7 @@ div.main {
     display: inline-block;
     height: 490px;
     margin-top: calc(((100vh - 565px) / 2));
-    position: relative; /* Добавлено для правильного позиционирования псевдоэлемента */
 }
-
-div.main::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 15px;
-    border: 5px solid transparent; /* Бесполезный цвет */
-    background-image: linear-gradient(white, white), linear-gradient(90deg, #414f57, #414f57); /* Градиент для анимации */
-    background-size: 200% 200%; /* Для анимации */
-    background-position: 100% 0; /* Начальная позиция */
-    animation: moveLine 3s linear infinite; /* Анимация */
-    z-index: -1; /* Сзади */
-}
-
-@keyframes moveLine {
-    0% {
-        background-position: 100% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-
 div.main section.photo {
     height: 125px;
 }
