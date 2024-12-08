@@ -41,7 +41,7 @@ div.main section.photo {
     height: 125px;
 }
 div.main section.photo img {
-    height: 135px;
+    height: 150px;
     border-radius: 50%;
 	-webkit-animation-duration: 5s; 
     animation-duration: 5s; 
